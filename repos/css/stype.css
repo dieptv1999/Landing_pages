@@ -1,0 +1,195 @@
+* {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+html {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  height: 10%;
+  width: 100%;
+}
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.header .aheader {
+  width: 20%;
+  float: left;
+  font-size: 18px;
+  margin-top: 15px;
+  text-decoration: none;
+  padding-left: 30px;
+  color: black;
+}
+.header .header-link {
+  width: 80%;
+  float: right;
+  text-align: right;
+  list-style: none;
+}
+.header-link li {
+  display: inline-block;
+  position: relative;
+  margin-inline-end: 35px;
+}
+.element-drop:hover,
+.element-drop:active{
+    color: deepskyblue;
+}
+.element-drop {
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+  color: black;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 170px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.drop-item:hover,
+.drop-item:active {
+  background-color: rgb(247, 245, 245);
+  margin-top: 30px;
+  border: none;
+  color: deepskyblue;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content .drop-item {
+  color: black;
+  padding: 3px 20px;
+  padding-left: 10px;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: left;
+  display: block;
+  transition: margin-top 1s;
+}
+.button-sign-up {
+  text-decoration: none;
+  color: white;
+  background-color: orange;
+  border-radius: 35px;
+  margin: 0 5px;
+  width: 110px;
+  height: 30px;
+  padding: 5px;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.4s;
+}
+.button-sign-up:hover,
+.button-sign-up:active {
+  background-color: deepskyblue;
+  text-align: center;
+}
+.more{
+  display: none;
+  position: absolute;
+  left: -300px;
+  background-color: white;
+  min-width: 170px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: 650px;
+  height: 250px;
+}
+.more .more-item {
+  width: 33.333%;
+  color: black;
+  padding: 3px 20px;
+  padding-left: 10px;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  transition: margin-top 1s;
+}
+.dropdown:hover .more{
+  display: flex;
+  flex-wrap: wrap;
+}
+.more-item:hover,
+.more-item:active {
+  background-color: rgb(247, 245, 245);
+  margin-top: 30px;
+  border: none;
+  color: deepskyblue;
+}
+/* ----------------------------------- */
+/* ------------------------------------------------------------------------------- */
+/* -------------------------Sign-up-header ------------------------*/
+.sign-up-header {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/bg_main_v3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.logo {
+  height: 100%;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+.container{
+  /* background-color: blue; */
+  padding: 5rem 0;
+  width: 50%;
+  height: 90%;
+  position: absolute;
+  left:50%;
+  text-align: center;
+  transform: translate(-50%,0);
+}
+.container h1{
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  font-size: 8rem;
+  font-weight: 100;
+  text-shadow: 0 1px 2rem rgba(0,0,0,.6);
+  margin-bottom: 6px;
+}
+.container p{
+  color: white;
+  font-size: 1.5em;
+  word-spacing: 1.5px;
+  font-family: 'Inconsolata', monospace;;
+}
+.container .btn-wrap{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+.container .btn-wrap a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 300;
+  padding: 16px 44px;
+  background-color: deepskyblue;
+  border-radius: 35px;
+  border:0 2px solid deepskyblue;
+}
+.btn-wrap a:hover,
+.btn-wrap a:active{
+  background-color:rgba(243, 236, 245, 0.1);
+  color: deepskyblue;
+}
